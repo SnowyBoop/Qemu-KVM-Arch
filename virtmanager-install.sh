@@ -1,3 +1,3 @@
-pacman -Syu libvirt dnsmasq dmidecode
+pacman -Syu libvirt dnsmasq dmidecode cpio
 systemctl start libvirtd
 pacman -Syu virt-manager
