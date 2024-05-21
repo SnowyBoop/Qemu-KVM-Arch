@@ -1,7 +1,7 @@
 echo "updating system"
 pacman -Syu
 echo "installing basics"
-pacman -Sy libvirt dnsmasq dmidecode cpio
+pacman -Sy libvirt dnsmasq dmidecode cpio qemu polkit
 echo "starting libvirt"
 systemctl start libvirtd
 echo "installing noob gui xd"
