@@ -3,6 +3,7 @@ pacman -Syu
 echo "installing basics"
 pacman -Sy libvirt dnsmasq dmidecode cpio polkit qemu qemu-kvm libvirt-daemon libvirt-clients bridge-utils virt-manager
 echo "starting libvirt"
+systemctl enable libvirtd
 systemctl start libvirtd
 echo "installing noob gui xd"
 pacman -Syu virt-manager 
