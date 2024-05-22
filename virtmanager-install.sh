@@ -13,4 +13,4 @@ echo "cleaning up"
 virsh net-start default
 virsh net-autostart default
 systemctl restart libvirtd
-echo "done :3"
+echo "done - make sure you enable vfio in grub!"
