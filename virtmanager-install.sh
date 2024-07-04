@@ -1,7 +1,7 @@
 echo "updating system"
 pacman -Syu
 echo "installing basics"
-pacman -S libvirt dnsmasq dmidecode cpio polkit qemu qemu-kvm libvirt-daemon libvirt-clients bridge-utils virt-manager
+pacman -S libvirt dnsmasq dmidecode cpio polkit qemu-full qemu-kvm libvirt-daemon libvirt-clients bridge-utils virt-manager
 echo "starting libvirt"
 systemctl enable libvirtd
 systemctl start libvirtd
